@@ -1,3 +1,3 @@
 # Tech-Academy-Projects
 
-This is the space station HTML & CSS demo page.
+This is the folder for my Tech Academy Projects.

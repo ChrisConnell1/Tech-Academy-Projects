@@ -21,13 +21,13 @@ WHERE Title = 'The Lost Tribe'
 END
 
 
-CREATE PROC GetBorrowersNoBooks
+CREATE PROC GetBorrowersIfNoBooks
 AS
 BEGIN
 /** PROC 3  Selects the names of borrowers with no books out... currently (11/15/17) every borrower has at least one book out**/
 SELECT Name FROM tbl_borrower a
-INNER JOIN book_loans b ON a.CardNo = b.CardNo
-WHERE GETDATE() > b.DueDate
+FULL OUTER JOIN book_loans b ON a.CardNo = b.CardNo
+WHERE b.CardNo IS NULL
 END
 
 CREATE PROC GetTitleNameAddressIfDueTodaySharpstown
@@ -47,7 +47,7 @@ AS
 BEGIN
 /** PROC 5 Selects Branch name, and total number of books loaned from each branch **/
 SELECT BranchName, COUNT(BookID) AS SumOfLoanedBooks FROM library_branch a
-INNER JOIN book_copies b ON a.BranchID = b.BranchID
+INNER JOIN book_loans b ON a.BranchID = b.BranchID
 GROUP BY BranchName;
 END
 

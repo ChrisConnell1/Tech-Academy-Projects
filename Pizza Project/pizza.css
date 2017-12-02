@@ -1,0 +1,175 @@
+.home {
+	background-image: url(pizza.jpeg);
+}
+
+.container {
+	display: flex;
+}
+
+#menu {
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.size {
+	/*float: left;*/
+	background-color: #a8b3b7;
+	margin: 0 auto;
+	text-align: left;
+	height: 280px;
+	width: 250px;
+	border: 3px solid #000;
+	border-radius: 2%;
+	box-shadow: 5px 5 20px grey;
+	opacity: .9;
+}
+
+.size:hover {
+	opacity: 1;
+}
+
+#sizeHead {
+	text-align: center;
+}
+
+.meat {
+	/*float: left;*/
+	background-color: #a8b3b7;
+	margin: 0 auto;
+	text-align: left;
+	height: 280px;
+	width: 250px;
+	border: 3px solid #000;
+	border-radius: 2%;
+	box-shadow: 5px 5 20px grey;
+	opacity: .9;
+}
+
+.meat:hover {
+	opacity: 1;
+}
+
+#meatHead {
+	text-align: center;
+}
+
+.cheese {
+	/*float: left;*/
+	background-color: #a8b3b7;
+	margin: 0 auto;
+	text-align: left;
+	height: 200px;
+	width: 250px;
+	border: 3px solid #000;
+	border-radius: 2%;
+	box-shadow: 5px 5 20px grey;
+	opacity: .9;
+}
+
+.cheese:hover {
+	opacity: 1;
+}
+
+#cheeseHead {
+	text-align: center;
+}
+
+.crust {
+	/*float: left;*/
+	background-color: #a8b3b7;
+	margin: 0 auto;
+	text-align: left;
+	height: 200px;
+	width: 250px;
+	border: 3px solid #000;
+	border-radius: 2%;
+	box-shadow: 5px 5 20px grey;
+	opacity: .9;
+}
+
+.crust:hover {
+	opacity: 1;
+}
+
+#crustHead {
+	text-align: center;
+}
+
+.sauce {
+	/*float: left;*/
+	background-color: #a8b3b7;
+	margin: 0 auto;
+	text-align: left;
+	height: 200px;
+	width: 250px;
+	border: 3px solid #000;
+	border-radius: 2%;
+	box-shadow: 5px 5 20px grey;
+	opacity: .9;
+}
+
+.sauce:hover {
+	opacity: 1;
+}
+
+#sauceHead {
+	text-align: center;
+}
+
+.veggies {
+	/*float: left;*/
+	background-color: #a8b3b7;
+	margin: 0 auto;
+	text-align: left;
+	height: 280px;
+	width: 250px;
+	border: 3px solid #000;
+	border-radius: 2%;
+	box-shadow: 5px 5 20px grey;
+	opacity: .9;
+}
+
+.veggies:hover {
+	opacity: 1;
+}
+
+#vegHead {
+	text-align: center;
+}
+
+#welcome {
+	text-align: center;
+	color: yellow;
+}
+
+.buttons {
+	display: inline-block;
+}
+
+#receipt {
+	width: 600px;
+	height: 400px;
+	border: 5px solid #000;
+	background-color: #a8b3b7;
+	opacity: 0.9;
+}
+
+#order {
+	text-align: center;
+}
+
+#items {
+	margin: 0px;
+	float: left;
+}
+
+#prices {
+	float: right;
+	margin-right: 50px;
+}
+
+	

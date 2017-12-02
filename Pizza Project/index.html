@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+	<title>Chris's Pizzeria</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+	<link rel="stylesheet" href="pizza.css">
+  </head>
+  
+  
+<body class="home">
+	<h1 id="welcome"> Welcome to Chris's Pizzeria!</h1>
+	<div class="container">
+		
+		<br><br><br>
+		<!-- Create menu with radio and multi selectors -->
+		<form id="menu">
+			<!-- First is pizza size -->
+			<div class="size"><br>
+				<h3 id="sizeHead">Please choose your pizza size:</h3><br><br>
+				<input type="radio" name="size" value="Personal"> Personal</input>&nbsp&nbsp<br>
+				<input type="radio" name="size" value="Medium"> Medium</input>&nbsp&nbsp<br>
+				<input type="radio" name="size" value="Large" checked> Large </input>&nbsp&nbsp<br>
+				<input type="radio" name="size" value="Extra Large"> Extra Large</input>&nbsp&nbsp
+			</div>
+			<!-- Next is meats -->
+			<div class="meat"><br>
+				<h3 id="meatHead">Choose a meat (First meat free, $1 per extra)</h3>
+				<input type="checkbox" name="meat" value="Pepperoni"> Pepperoni</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="meat" value="Sausage"> Sausage</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="meat" value="Ground Beef"> Ground Beef</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="meat" value="Anchovy"> Anchovy</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="meat" value="Chicken"> Chicken</input>&nbsp&nbsp
+			</div>
+				
+			<!-- Next is veggies -->
+			<div class="veggies"><br>
+				<h3 id="vegHead">Choose your veggies (First free, $1 per extra):</h3>
+				<input type="checkbox" name="veggies" value="Tomato"> Tomatoes</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="veggies" value="Onion"> Onions</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="veggies" value="Green Peppers"> Green Peppers</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="veggies" value="Mushrooms"> Mushrooms</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="veggies" value="Pineapple"> Pineapple</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="veggies" value="Spinach"> Spinach</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="veggies" value="Olives"> Olives</input>&nbsp&nbsp<br>
+				<input type="checkbox" name="veggies" value="Jalapeno"> Jalapeno</input>&nbsp&nbsp
+			</div>
+
+			<!-- Then cheese -->
+			<div class="cheese"><br>
+				<h3 id="cheeseHead">Choose your cheese:</h3>
+				<input type="radio" name="cheese" value="Regular Cheese" checked> Regular Cheese</input>&nbsp&nbsp<br>
+				<input type="radio" name="cheese" value="No Cheese"> No Cheese</input>&nbsp&nbsp<br>
+				<input type="radio" name="cheese" value="Extra Cheese"> Extra Cheese (+$3)</input>
+			</div>
+			<!-- Next is crust -->
+			<div class="crust"><br>
+				<h3 id="crustHead">Choose your crust:</h3>
+				<input type="radio" name="crust" value="Plain Crust" checked> Plain</input>&nbsp&nbsp<br>
+				<input type="radio" name="crust" value="Garlic Butter Crust"> Garlic Butter</input>&nbsp&nbsp<br>
+				<input type="radio" name="crust" value="Stuffed Crust"> Cheese Stuffed Crust (+$3)</input>&nbsp&nbsp<br>
+				<input type="radio" name="crust" value="Spicy Crust"> Spicy Crust</input>&nbsp&nbsp<br>
+				<input type="radio" name="crust" value="Special Crust"> House Special</input>&nbsp&nbsp
+			</div>
+			<!-- Finally, sauce -->
+			<div class="sauce"><br>
+				<h3 id="sauceHead">Choose your sauce:</h3>
+				<input type="radio" name="sauce" value="Marinara Sauce" checked> Marinara sauce</input>&nbsp&nbsp<br>
+				<input type="radio" name="sauce" value="White Sauce"> White sauce</input>&nbsp&nbsp<br>
+				<input type="radio" name="sauce" value="Bbq Sauce"> BBQ sauce</input>&nbsp&nbsp<br>
+				<input type="radio" name="sauce" value="No Sauce"> No sauce</input>&nbsp&nbsp
+			</div>
+		</form>
+	</div>
+	
+	<div class="buttons">
+		<button type="button" onclick="Total()" a href="#receipt">Place order</button>
+		<!-- <button type="button" onclick="Clear()">Cancel</button> -->
+	</div>
+	<br><br>
+	
+	<div id="receipt"> <!-- When "Place order" is clicked, scroll down to receipt page -->
+		<h3 id = "order">You ordered: </h3>
+		<ul>
+			<list id= "items"> </p>
+		</ul>
+		<ul>		
+			<list id ="prices"> </p>
+		</ul>
+	</div>
+	
+	
+	<script>
+	var size = 0.00;
+	var meat = 0.00;
+	var cheese = 0.00;
+	var veggies = 0.00;
+	var sauce = 0.00;
+	var sizeCost;
+	var meatCost;
+	var crustCost;
+	var cheeseCost;
+	var vegCost;
+	var sauceCost = 0.00;
+	
+function Total() { //This function will continue to add if you click different amounts, **how to reset each time??**
+	
+	total = 0.00; 	// Clears the total, so if another item is chosen, it resets the total instead of adding to the previous sum. Done after total is shown.
+	
+	//Pizza size price
+	var size = document.querySelector('input[name="size"]:checked').value; // Selects the size that was checked
+	if (size == "Personal") {
+		sizeCost = 6;
+		total = total + 6;
+	}
+	else if(size == "Medium") {
+		total = total + 10;
+		sizeCost = 10.00;
+	}
+	else if(size == "Large") {
+		total = total + 14;
+		sizeCost = 14.00;
+	}
+	else if(size == "Extra Large") {
+		total = total + 16;
+		sizeCost = 16.00;
+	}
+	
+	// Adds the string of the size value to the recipt
+	var sizevalue = document.getElementsByName("size");
+	var sizeString = ' ';
+	var si;
+	
+	for (si = 0; si < sizevalue.length; si++) {
+		if (sizevalue[si].checked === true) {
+			sizeString += sizevalue[si].value + " ";
+			}
+		}
+	
+	//Meats... This determines how much to charge based on number of meats selected above 1.
+	
+	var meat = document.querySelectorAll('input[name="meat"]:checked').length; 
+	var i = (meat - 1);
+	if (meat > 1) {
+		total = total + i;
+		meatCost = i;
+		}
+	else if (meat <= 1) {
+		total = total + 0;
+		meatCost = 0.00;
+		}
+	
+	// Grabs the value of meat or meats that were chosen, adds them to a string, which can be displayed on receipt.
+	
+	var mvalue = document.getElementsByName("meat");
+	var mString = ' ';
+	var m;
+	
+	for (m = 0; m < mvalue.length; m++) {
+		if (mvalue[m].checked === true) {
+			mString += mvalue[m].value + ", ";
+		}
+	}
+	mString = mString.replace(/,\s*$/, ""); // This wild thing removes last comma and any whitespace after last element.
+		
+		
+		console.log(mString);
+	//console.log(total);
+	
+	//Cheese
+	var cheese = document.querySelector('input[name="cheese"]:checked').value; //Selects cheese option
+	if (cheese == "Regular Cheese") {
+		total + 0;
+		cheeseCost = 0.00;
+		}
+	else if (cheese == "No Cheese") {
+		total + 0;
+		cheeseCost = 0.00;
+		}
+	else if (cheese == "Extra Cheese") {  //This is the only option which effects the total
+		total = total + 3;
+		cheeseCost = 3.00;
+		}
+		
+	// This grabs the value of the selected cheese and adds to a string for receipt.	
+	var cvalue = document.getElementsByName("cheese");
+	var chString = ' ';
+	var c;
+	
+	for (c = 0; c < cvalue.length; c++) {
+		if (cvalue[c].checked === true) {
+			chString += cvalue[c].value + " ";
+			}
+		}
+		console.log(chString);
+	//console.log(total);
+
+	
+	//Crust
+		
+	var crust = document.querySelector('input[name="crust"]:checked').value; //Determines if $3 is to be added or not
+	if (crust == "Stuffed Crust") {
+		total = total + 3;
+		crustCost = 3.00;
+		}
+	else if (crust != "Stuffed Crust") {
+		total = total;
+		crustCost = 0.00;
+		}
+		
+	// Adds the value of the selected crust option to a string, for receipt purposes.	
+	var crvalue = document.getElementsByName("crust");
+	var crString = ' ';
+	var cr;
+	
+	for (cr = 0; cr < crvalue.length; cr++) {
+		if (crvalue[cr].checked === true) {
+			crString += crvalue[cr].value + " ";
+			}
+		}
+		console.log(crString);
+		
+	//Veggies ... This determines how many dollars to add, if any, to total, based on number of veggies above 1 selected.
+	
+	var veg = document.querySelectorAll('input[name="veggies"]:checked').length;
+	var b = (veg - 1);
+	if (veg > 1) {
+		total = total + b;
+		vegCost = b;
+		}
+	else if (veg <= 1) {
+		total = total;
+		vegCost = 0.00;
+		}
+		
+	// This determines which veggies are chosen, and will display them.
+	var vvalue = document.getElementsByName("veggies");
+	var vString = ' ';
+	var v;
+	
+	for (v = 0; v < vvalue.length; v++) {
+		if (vvalue[v].checked === true) {
+			vString += vvalue[v].value + ", ";
+			}
+		}
+		console.log(vString);
+		
+	vString = vString.replace(/,\s*$/, "");  // Removes last comma & whitespace
+	//console.log(total);
+	
+	
+	//Sauce.. nothing effects price here, so commented out the else ifs.
+	var sauce = document.querySelector('input[name="sauce"]:checked').value;
+			/*if (sauce == "Marinara") {
+				total + 0;
+			}
+			else if (sauce == "White") {
+				total + 0;
+			}
+			else if (sauce == "BBQ") {
+				total + 0;
+			}
+			else if (sauce == "None") {
+				total + 0;	
+			}*/
+	
+	var svalue = document.getElementsByName("sauce");
+	var sString = ' ';
+	var s;
+	
+	for (s = 0; s < svalue.length; s++) {
+		if (svalue[s].checked === true) {
+			sString += svalue[s].value + " ";
+			}
+		}
+		console.log(sString);
+		console.log(total);
+		
+	
+	// The innerhtml script that will put the selected values into the receipt
+	
+	document.getElementById("items").innerHTML = sizeString + "<br>" + mString + "<br>" + chString + "<br>" + vString + "<br>" + crString + "<br>" + sString + "<br>" + "<br>" + "TOTAL:";
+	
+	document.getElementById("prices").innerHTML = "$" + sizeCost + "<br>" + " $"+ meatCost + "<br>" + "$"+ cheeseCost + "<br>" +  " $"+ vegCost + "<br>" + "$"+ crustCost + "<br>" + "$" + sauceCost + "<br>" + "<br>" + " $" + total;
+	
+	//Create cancel function, that clears all to default
+	
+	
+}
+
+	</script>
+
+
+
+
+
+</body>
+
+ <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+
+</html>

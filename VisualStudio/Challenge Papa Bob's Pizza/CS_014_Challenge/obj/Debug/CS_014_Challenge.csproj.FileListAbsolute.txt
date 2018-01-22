@@ -1,0 +1,66 @@
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\ApplicationInsights.config
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\csc.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\vbc.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\VBCSCompiler.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\CS_014_Challenge.dll.config
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\CS_014_Challenge.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\CS_014_Challenge.pdb
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.Web.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.Web.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\obj\Debug\CS_014_Challenge.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\obj\Debug\CS_014_Challenge.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\CS_014_Challenge\CS_014_Challenge\obj\Debug\CS_014_Challenge.pdb
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\ApplicationInsights.config
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\csc.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\vbc.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\VBCSCompiler.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\CS_014_Challenge.dll.config
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\CS_014_Challenge.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\CS_014_Challenge.pdb
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.Web.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.Web.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\obj\Debug\CS_014_Challenge.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\obj\Debug\CS_014_Challenge.dll
+C:\Users\Student\Documents\Visual Studio 2015\Projects\Challenge Papa Bob's Pizza\CS_014_Challenge\obj\Debug\CS_014_Challenge.pdb

@@ -11,15 +11,22 @@ namespace MegaCasinoChallenge
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          if (!Page.IsPostBack)
+            Random Init = new Random();  // First things first, must initialize reel images upon page load. These have no attachment to any bet, just the initial pictures.
+            string[] images = new string[12] { "Strawberry", "Bar", "Lemon", "Clover", "Bell", "Diamond", "HorseShoe", "Cherry", "Orange", "Plum", "Seven", "Watermelon" };
+            Reel1Image.ImageUrl = images[Init.Next(0, images.Length)] + ".png";  //Randomly choose an index, somewhere between 0 and the [].length, append ".png" to the URL.
+            Reel2Image.ImageUrl = images[Init.Next(0, images.Length)] + ".png";
+            Reel3Image.ImageUrl = images[Init.Next(0, images.Length)] + ".png";
+
+
+
+            if (!Page.IsPostBack)
             {
-                ViewState.Add("PlayersMoney", 100);
+                ViewState.Add("PlayersMoney", 100);  // Initialize wallet in ViewState
                 displayPlayersMoney();
             }
         }
 
 
-        //EVERYTHING WORKS EXCEPT VIEWSTATE???
 
         int bet =  0;
         protected void leverButton_Click(object sender, EventArgs e)
@@ -50,7 +57,6 @@ namespace MegaCasinoChallenge
 
         private void SelectImageForReel(string image1, string image2, string image3)
         {
-            //This function takes in the value of string1, hopefully to return a picture that will be the value of reel 1.
             // This can match the name of image to the image itself! And doesn't require to know which one was chosen!
             Reel1Image.ImageUrl = image1 + ".png";
             Reel2Image.ImageUrl = image2 + ".png";
@@ -94,8 +100,8 @@ namespace MegaCasinoChallenge
         protected void BarEndText()  //If bar was rolled, this is the end of the line.
         {
             resultLabel.Text += "<br />You rolled a bar, you lose! Better luck next time!";
-            //Affect wallet here
-            return;
+            SetNewMoneyTotal("", bet);   // This will send you to new total function, which affects the wallet in ViewState
+            return; 
         }
 
         protected int DoesCherryExist(string image1, string image2, string image3)
@@ -139,7 +145,7 @@ namespace MegaCasinoChallenge
         private void SetNewMoneyTotal(string WinCondition, int bet, int HowMany = 0)
         {
             int TotalMoney = int.Parse(ViewState["PlayersMoney"].ToString());
-            ViewState["PlayersMoney"] = TotalMoney;
+            
             
             TotalMoney -= bet;
             if (WinCondition == "Jackpot")
@@ -153,6 +159,7 @@ namespace MegaCasinoChallenge
                     TotalMoney += bet * 4;
 
             moneyLabel.Text = String.Format("Players money: {0:C}", TotalMoney);
+            ViewState["PlayersMoney"] = TotalMoney;
   
         }
 

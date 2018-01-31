@@ -24,11 +24,16 @@ namespace ChallengeSimpleDarts
             int doubleBand = dart.DoubleBand;
             int tripleBand = dart.TripleBand;
 
+            string winner;
+            if (game.Player1Wins == true)
+                winner = "Player 1 wins!";
+            else winner = "Player 2 wins!";
+
             resultLabel.Text = "";
-            resultLabel.Text += String.Format("Player 1 score:{0} <br />Player 2 score:{1}<br />Player 1 Wins?: {2}<br />Number of double bands: {3}<br />Number of triple bands: {4}",
+            resultLabel.Text += String.Format("Player 1 score:{0} <br />Player 2 score:{1}<br />{2}<br />Number of double bands: {3}<br />Number of triple bands: {4}",
                 game.playerOneScore,
                 game.playerTwoScore,
-                game.Player1Wins,
+                winner,
                 doubleBand,
                 tripleBand);
 

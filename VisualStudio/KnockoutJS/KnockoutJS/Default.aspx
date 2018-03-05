@@ -48,7 +48,7 @@
 
         var vm = {
             name: ko.observable("New Product"),
-            price: ko.observable("0"),
+            price: ko.observable("$0"),
             products: ko.observableArray([new Product("Mango", "$4"), new Product("Lime", "$2")]),
 
             addProduct: function () {
